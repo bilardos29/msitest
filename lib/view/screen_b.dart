@@ -32,7 +32,6 @@ class _ScreenBState extends State<ScreenB> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('hasil : ${presenter.result}'),
             TextField(
                 controller: text1,
                 decoration: InputDecoration(hintText: 'Input First Text')),
@@ -44,7 +43,7 @@ class _ScreenBState extends State<ScreenB> {
             ElevatedButton(
                 onPressed: () {
                   presenter.submitData(text1.text, text2.text);
-                  // Navigator.pop(context);
+                  Navigator.pop(context);
                 },
                 child: Text("Submit")),
           ],

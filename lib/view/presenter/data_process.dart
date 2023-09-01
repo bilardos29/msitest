@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class DataProcess with ChangeNotifier {
+class DataProcess extends ChangeNotifier {
   String _result = '';
 
   set result(String val) {
